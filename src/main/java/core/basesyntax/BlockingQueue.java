@@ -34,7 +34,7 @@ public class BlockingQueue<T> {
     }
 
     public synchronized boolean isEmpty() {
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             return false;
         }
         return true;
